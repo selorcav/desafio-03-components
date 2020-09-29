@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('https://rickandmortypod.com/wp-content/uploads/2018/11/cropped-RM_page-header_background1-3.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    color: chartreuse;
+    padding: 10px;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+.profile-pic{
+    border-radius: 50%;
+    overflow: hidden;
+}

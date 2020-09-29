@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty Characters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1> {{title}} </h1>
+        <list-component>
+        </list-component>
+    </div>
+    <script type="text/x-template" id="list-template">
+        <ul>
+            <li v-for="character in characters" >
+                <div class="profile-pic">
+                    <img :src="character.image" alt="">
+                </div>
+                <h1>{{character.name}}</h1>
+            </li>
+        </ul>
+    </script>
+
+    <script src='https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js'></script>    
+    <script src="./component/list-components.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
